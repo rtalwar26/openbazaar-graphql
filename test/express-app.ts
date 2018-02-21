@@ -1,5 +1,5 @@
-import { ListingSchema } from './../listings/schema';
-import { ListingRoot } from './../listings/root';
+import { ListingSchema, ListingRoot } from './../listings/index';
+
 import fs = require('fs');
 import * as GraphHTTP from 'express-graphql';
 import * as graphql from 'graphql';

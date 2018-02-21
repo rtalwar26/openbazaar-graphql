@@ -1,8 +1,17 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const GQLRoot = {
-    func1: async (args) => {
-        return {};
+exports.ListingRoot = {
+    listings: async (args) => {
+        return [{
+                hash: "hash",
+                title: "title",
+                slug: "slug",
+                description: "description",
+                contractType: "PHYSICAL_GOOD",
+                price: {
+                    amount: 55,
+                    currencyCode: "INR"
+                }
+            }];
     }
 };
-exports.default = GQLRoot;

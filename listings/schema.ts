@@ -4,4 +4,8 @@ import * as graphql from 'graphql';
 
 const graphQlSchemaPath = require.resolve('./listings.graphql');
 
-export default graphql.buildSchema(fs.readFileSync(graphQlSchemaPath, 'utf8'));
+let fileContents = fs.readFileSync(graphQlSchemaPath, 'utf8');
+
+export let ListingSchema = graphql.buildSchema(fileContents);
+
+

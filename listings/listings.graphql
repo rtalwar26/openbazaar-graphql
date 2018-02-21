@@ -19,7 +19,7 @@ type Listing{
     slug: String
     description: String
     contractType : CONTRACT_TYPE
-    price : AMOUNT
+    price : Amount
 }
 type Query {
     listings(token:String):[Listing]

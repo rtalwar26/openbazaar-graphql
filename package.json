@@ -1,0 +1,31 @@
+{
+  "name": "openbazaar-graphql",
+  "version": "1.0.0",
+  "description": "A nodejs graphql adapter for openbazaar apis",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rtalwar26/openbazaar-graphql.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rtalwar26/openbazaar-graphql/issues"
+  },
+  "homepage": "https://github.com/rtalwar26/openbazaar-graphql#readme",
+  "dependencies": {
+    "graphql": "^0.13.1",
+    "nconf": "^0.10.0",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "@types/graphql": "^0.12.4",
+    "@types/nconf": "0.0.37",
+    "@types/node": "^9.4.6",
+    "@types/request-promise": "^4.1.41",
+    "typescript": "^2.7.2"
+  }
+}

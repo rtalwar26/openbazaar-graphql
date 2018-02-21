@@ -1,0 +1,30 @@
+
+enum CONTRACT_TYPE {
+  PHYSICAL_GOOD
+  
+}
+enum CURRENCY_TYPE{
+    USD
+    INR
+}
+
+type Amount{
+ amount: Float
+ currencyCode : CURRENCY_TYPE   
+}
+
+type Listing{
+    hash: String
+    title: String
+    slug: String
+    description: String
+    contractType : CONTRACT_TYPE
+    price : AMOUNT
+}
+type Query {
+    listings(token:String):[Listing]
+}
+
+
+
+

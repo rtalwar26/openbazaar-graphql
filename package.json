@@ -19,6 +19,7 @@
   "dependencies": {
     "graphql": "^0.13.1",
     "nconf": "^0.10.0",
+    "request": "^2.83.0",
     "request-promise": "^4.2.2"
   },
   "devDependencies": {

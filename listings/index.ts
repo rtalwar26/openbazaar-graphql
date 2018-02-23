@@ -2,6 +2,7 @@
 
 import fs = require('fs');
 import * as graphql from 'graphql';
+import OBModelFactory from '../models/OBModelFactory';
 
 const graphQlSchemaPath = require.resolve('./listings.graphql');
 
@@ -12,19 +13,7 @@ export let ListingSchema = graphql.buildSchema(fileContents);
 
  export let ListingRoot = {
 
-    listings: async (args?: any) => {
-        return [{
-            hash: "hash",
-            title: "title",
-            slug : "slug",
-            description:"description",
-            contractType:"PHYSICAL_GOOD",
-            price:{
-                amount:55,
-                currencyCode: "INR"
-            }
-        }]
-    }
+    listings: async (args?: any) => OBModelFactory.listings(args.token).query()
    
 }
 

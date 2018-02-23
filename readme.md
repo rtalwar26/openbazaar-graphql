@@ -5,7 +5,7 @@ This module can be used with express or similar servers, or can be directly used
 
 ### Running Open Bazaar daemon
 
-```
+```bash
 cd $GOPATH
 go get -u github.com/OpenBazaar/openbazaar-go
 cd $GOPATH/src/github.com OpenBazaar/openbazaar-go
@@ -14,7 +14,9 @@ go run openbazaard.go start -c <authcookie>
 
 ### Installation
 
-```npm install openbazaar-graphql```
+```bash
+npm install openbazaar-graphql
+```
 
 ### Docs
 
